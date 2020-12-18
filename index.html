@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+	</head>
+	<body>
+		<div id="app">
+			<v-app>
+				<v-main>
+					<v-container>
+						<v-text-field id="search" label="Search input" hide-details="auto"></v-text-field>
+						<div class="v-data-table theme--light">
+							<div id="list" class="v-data-table__wrapper"></div>
+						</div>
+						<div id="navigation"></div>
+					</v-container>
+				</v-main>
+				<v-footer>
+					&copy; Artem Golubchikov. GitHub &nbsp;<a href="https://github.com/adgolubchikov" target="_blank">adgolubchikov</a>
+				</v-footer>
+			</v-app>
+		</div>
+		<div id="dialog" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Loading package data...</p>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
